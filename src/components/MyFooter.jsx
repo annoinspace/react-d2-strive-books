@@ -1,9 +1,13 @@
-import { Navbar, Container } from "react-bootstrap"
+import { Row, Col, Navbar, Container } from "react-bootstrap"
 
 const MyFooter = () => (
   <Navbar fixed="bottom" expand="lg" bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand href="#"></Navbar.Brand>
+    <Container className="d-flex justify-content-center">
+      <Row>
+        <Col lg={12}>
+          <div className="text-center text-white">@Strive Books</div>
+        </Col>
+      </Row>
     </Container>
   </Navbar>
 )
