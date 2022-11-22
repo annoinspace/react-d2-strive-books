@@ -13,7 +13,7 @@ class LatestRelease extends Component {
           <Col sm={12}>
             <Row>
               {romance.map((book) => (
-                <Col md={4} className="mb-3">
+                <Col key={book.asin} md={4} className="mb-3">
                   <Card>
                     <Card.Img variant="top" src={book.img} />
                   </Card>
